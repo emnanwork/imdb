@@ -1,0 +1,50 @@
+01: understanding nextjs app structure
+
+02: install nextjs and tailwind css and create the first template
+https://nextjs.org/docs/getting-started/installation
+npx create-next-app@latest
+    install whats needed
+    imdb-next (name of project)
+    no to typescript
+    yes Eslint (for typos)
+    tailind css yes
+    src/ directory yes
+    app router yes (creatg routes)
+    alias for short cut when importing packages
+    alias to use @ ie default
+
+
+run npm run dev (after installation)
+
+23:59
+
+create header and nav
+create components folder in src folder
+    create Header.jsx file (use rfc formatting to create Hearder function)
+import the hearder in layout.js (found in src/app/layout.js) 
+and place the Header component in the body before the children component
+for the menu
+    create a component for menu item
+    ie create MenuItem.jsx file in components folder 
+    use rfc to create MenuItem function
+    and use MenuItem in Header.jsx file
+
+In MenuItem component we need to pass the title, address and Icon
+for the icons
+    install a package called react-icons (https://react-icons.github.io/react-icons/)
+        npm i react-icons
+https://react-icons.github.io/react-icons/icons/ai/
+import AiFillHome icon from  react-icons.ai, in Header.jsx file
+
+In MenuItem.jsx file add title, address, Icon as props (ie MenuItem({title, address, Icon}))
+styling  MenuItem.jsx  using tailwind css
+
+Add dark mode
+
+
+
+
+
+
+
+

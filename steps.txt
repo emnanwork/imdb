@@ -40,9 +40,35 @@ In MenuItem.jsx file add title, address, Icon as props (ie MenuItem({title, addr
 styling  MenuItem.jsx  using tailwind css
 
 Add dark mode
+create dark/light mode effect using a package called next theme
+    npm i next-themes
+any interaction with the website should be in client side
+create a Providers.jsx file in src/app folder
+in Providers.jsx file use rfc (react functional component) to create Providers function, then app 'use client' for it to be a client
+import ThemeProvider from next-themes
+cover everthing in the return with ThemeProvider
+add children as props (parameter) to the Providers fxn
+In layout.js (in app folder) cover everything in the body with the Providers created
+
+create DarkModeSwitch.jsx, rfc DarkModeSwitch fxn
+    import MdLightMode MdDarkMode from react-icons/md
+    import useTheme from next-themes
+    create diff theme const 
+    create currentTheme const 
+    set currentTheme and toggle the Icon
+    add onclick methods to DarkModeSwitch to change from light to dark mode
+
+
+add styling to the div inside ThemeProvider which is surrounding {children}
+
+
+01:00:21
 
 
 
+
+
+57:37
 
 
 

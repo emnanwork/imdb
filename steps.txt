@@ -62,7 +62,14 @@ create DarkModeSwitch.jsx, rfc DarkModeSwitch fxn
 add styling to the div inside ThemeProvider which is surrounding {children}
 
 
-01:00:21
+05 CReate the about package
+to create a page, go to the app directory and create a folder as name the name of the page you want to create, and inside the folder create a page called page.jsx
+
+in app directory create about folder
+    in about fodler create page.jsx file (use rfc to create a react functional component, called About)
+
+
+Create the navbar componet
 
 
 

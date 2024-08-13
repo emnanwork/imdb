@@ -69,13 +69,54 @@ in app directory create about folder
     in about fodler create page.jsx file (use rfc to create a react functional component, called About)
 
 
-Create the navbar componet
+Create the navbar component 1:08:01
+create a component called Navbar.jsx inside components folder
+create a component called NavbarItem.jsx inside components folder
+in layout.js (found in app folder), add Navbar component (<Navbar />) after the Header component
+add two NavbarItem <NavbarItem /> in Navbar
+add arguments to the NavBarItem <NavbarItem title="Trending" param="fetchTrending"/>
+in NavBarItem passing title and param as props NavbarItem({ title, param}) to be able to use them 
+in NavbarItem, import useSearchParams to change style when nav bar item is selected
+    'use client'; (useSearchParams is use in the client side)
+    import { useSearchParams} from 'next/navigation'
+initialise be4 return statement
+    const searchParams = useSearchParams()
+
+
+
+Fetch data from TMDB API in the home page
+create a file for local viriable (we won't upload the file to github) .env.local (in project directory)
+In .env.local file
+    create API_KEY variable and paste api key from TMDB (ie API_KEY = apikey)
+In home page ie page.js file in app folder (found in src folder)
+create an API_KEY variable and process API_KEY in .env file
+    const API_KEY = process.env.API_KEY;
+
+change react functional componet to asynchronous by adding async and then create an await to wait for the results
+add searchParams as props to Home function
+    export default async function Home({searchParams})
+getting the response thro fetch
+    const res = await fetch(url);
+
+create Results.jsx components file inside components folder (to display result from fetch)
+inside home page (page.js inside app folder), call the Result component, and pass results ie data.results as prop
+    <Results  results={results}/>
+inside Results component get the results as prop and loop throu it
+
+1:25:27
 
 
 
 
 
-57:37
+
+
+
+
+
+
+
+
 
 
 

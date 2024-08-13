@@ -16,7 +16,6 @@ npx create-next-app@latest
 
 run npm run dev (after installation)
 
-23:59
 
 create header and nav
 create components folder in src folder
@@ -103,7 +102,18 @@ inside home page (page.js inside app folder), call the Result component, and pas
     <Results  results={results}/>
 inside Results component get the results as prop and loop throu it
 
-1:25:27
+Handling errors
+create error.jsx file in app folder, add rfc 
+add "use client"
+pass as prop error ie export default function error({error, reset}), reset means try again
+import { useEffect } from 'react'
+in error fxn, be4 return add
+    useEffect(() => {
+        console.log(error);
+    }, [error]);
+
+design home page with card to display the results
+
 
 
 

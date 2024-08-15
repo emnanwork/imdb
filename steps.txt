@@ -112,6 +112,23 @@ in error fxn, be4 return add
         console.log(error);
     }, [error]);
 
+
+Add Loading effect
+create loading.jsx file inside the app folder 
+in loading.jsx
+https://loading.io/ (to download animated svg)
+after downloading the loading svg, copy and paste it in the public folder
+in loading.jsx file add img tag with src spin.svg
+in page.js, the fetch fxn get the data and caches it at once 
+to revalidate the data every 60sec add {next: {revalidate:60}} 
+setTimeout to add a delay so we can see the loading effect (for test)
+
+
+
+
+
+
+
 design home page with card to display the results
 
 

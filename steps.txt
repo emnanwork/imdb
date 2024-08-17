@@ -124,14 +124,19 @@ to revalidate the data every 60sec add {next: {revalidate:60}}
 setTimeout to add a delay so we can see the loading effect (for test)
 
 
-
-
-
-
-
 design home page with card to display the results
-
-
+card components
+create Card.jsx file in components folder
+style the div in Results.jsx so that the small size and above should be in grid (sm:grid)
+small size and above should be in grid col of 2 (sm:grid-col-2) effect
+max-W-6xl mx-auto to center the div
+styling cards with image
+add Image tag gottten from import Image from 'next/image';
+    in next.config.js or next.config.mjs file found in app main directory
+    in nextConfig array add 
+        images: {
+            domains: ['images.tmdb.org'],
+        }
 
 
 

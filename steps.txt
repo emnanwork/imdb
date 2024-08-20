@@ -140,6 +140,32 @@ add Image tag gottten from import Image from 'next/image';
 
 
 
+Add Movie Page
+create movie folder inside app folder (found inside src folder)
+    create [id] folder inside movie folder
+        create page.jsx file (use rcf to create react functional component called MoviePage)
+
+change function to async and await fetch movie information
+MoviePage({ params }) 
+get id: const movieId = params.id;
+    change the response to json
+        const movie = await res.json();
+
+
+in next.config.js file
+    env: {
+        customKey: process.env.API_KEY, // pulls from .env file
+    },
+in page.js file in movie/[id] folder
+    in fetch fxn: put api_key=${process.env.customKey}
+
+
+
+
+
+
+
+
 
 
 

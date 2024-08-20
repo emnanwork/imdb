@@ -1,15 +1,12 @@
-module.exports = {
-    images: {
-      remotePatterns: [
-        {
-        //   protocol: 'https',
-          hostname: 'images.tmdb.org',
-        //   port: '',
-        //   pathname: '/account123/**',
-        },
-      ],
-    },
-  }
+// module.exports = {
+//     images: {
+//       remotePatterns: [
+//         {
+//           hostname: 'images.tmdb.org',
+//         },
+//       ],
+//     },
+//   }
 
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
@@ -20,3 +17,19 @@ module.exports = {
 // };
 
 // module.exports = nextConfig;
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+      domains: [
+        'images.tmdb.org',
+        'www.js-craft.io'
+      ],
+  },
+  env: {
+    customKey: process.env.API_KEY, // pulls from .env file
+  },
+}
+
+module.exports = nextConfig

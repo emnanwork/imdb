@@ -7,6 +7,8 @@ import { FiThumbsUp } from 'react-icons/fi';
 
 export default function Card({ result }) {
   const API = "https://image.tmdb.org/t/p/original/";
+  console.log(result.backdrop_path);
+  console.log(result.id);
   const myLoader=({src})=>{
     return `${API}${
       result.backdrop_path ||

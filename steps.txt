@@ -161,6 +161,34 @@ in page.js file in movie/[id] folder
 
 
 
+Add search box
+create a new component called SearchBox.jsx (ie a new file) then add rfc in the file
+add the SearchBox component in between the children and Navbar component in layout.js file (inside app folder)
+in SearchBox.jsx file, add form with search input
+inmport 
+    { useRef, useState } from react
+    { useRouter } from "next/navigation"
+
+in SearchBox() fxn
+    const [search, setSearch] = useState("");
+    const router = useRouter();
+
+create a form submit handler
+     const formSubmitHandler = (e) => {
+        e.preventDefault();
+        router.push(`/search/${search}`); (need to create the route file)
+      };
+
+in app folder
+    create search folder
+        create [searchTerm] folder
+            create page.jsx file (rfc function SearchPage())
+
+in page.jsx in searchterm folder, we can get the search entered by using param
+    SearchPage({params})
+
+
+
 
 
 
